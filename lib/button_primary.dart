@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:jadex/color/color_palette.dart';
 
 class ButtonPrimary extends StatefulWidget {
+  final String btnText;
+  final Color btnColor;
+
+  ButtonPrimary({Key key, @required this.btnText, this.btnColor}): super(key: key);
+
   @override
   _ButtonPrimaryState createState() => _ButtonPrimaryState();
 }
@@ -16,11 +21,11 @@ class _ButtonPrimaryState extends State<ButtonPrimary> {
         shape: RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(8.0)),
         child: Text(
-          'Button Primary',
+          widget.btnText,
           style: TextStyle(fontFamily: 'Nunito', fontSize: 16),
         ),
         textColor: Palette.white,
-        color: Palette.warm_pink,
+        color: widget.btnColor ?? Palette.warm_pink,
         onPressed: () {},
       ),
     );
