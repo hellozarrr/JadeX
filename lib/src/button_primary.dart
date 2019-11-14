@@ -9,7 +9,7 @@ class ButtonPrimary extends StatefulWidget {
 class _ButtonPrimaryState extends State<ButtonPrimary> {
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 320,
       height: 54,
       child: RaisedButton(
@@ -17,7 +17,7 @@ class _ButtonPrimaryState extends State<ButtonPrimary> {
             borderRadius: new BorderRadius.circular(8.0)),
         child: Text(
           'Button Primary',
-          style: TextStyle(fontFamily: 'Nunito', fontSize: 14),
+          style: TextStyle(fontFamily: 'Nunito', fontSize: 16),
         ),
         textColor: Palette.white,
         color: Palette.warm_pink,
