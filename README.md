@@ -1,6 +1,6 @@
 # jadex
 
-JadeX is Jambul Design Experience which is a design system created to make it easier to develop applications that use flutter.
+JadeX is a Jambul Design Experience, which is a design system created to make it easier to develop applications that use flutter.
 
 ## Getting Started
 
