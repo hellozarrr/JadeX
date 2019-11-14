@@ -10,8 +10,8 @@ class _ButtonPrimaryState extends State<ButtonPrimary> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 286,
-      height: 37,
+      width: 320,
+      height: 54,
       child: RaisedButton(
         shape: RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(8.0)),
