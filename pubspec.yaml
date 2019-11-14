@@ -1,8 +1,8 @@
 name: jadex
-description: A new Flutter package project.
+description: Jambul design system use flutter.
 version: 0.0.1
-author:
-homepage:
+author: Zar Rinaldi<aldir65@gmail.com>
+homepage: https://github.com/RinaldiZar/JadeX.git
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
