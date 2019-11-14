@@ -6,7 +6,8 @@ class ButtonPrimary extends StatefulWidget {
   final Color btnColor;
   final Function btnPress;
 
-  ButtonPrimary({Key key, @required this.btnText, this.btnColor, this.btnPress}): super(key: key);
+  ButtonPrimary({Key key, @required this.btnText, this.btnColor, this.btnPress})
+      : super(key: key);
 
   @override
   _ButtonPrimaryState createState() => _ButtonPrimaryState();
