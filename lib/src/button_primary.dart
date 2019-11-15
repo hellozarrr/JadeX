@@ -3,10 +3,17 @@ import 'package:jadex/color/color_palette.dart';
 
 class ButtonPrimary extends StatefulWidget {
   final String btnText;
+  final double btnWidth, btnHeight;
   final Color btnColor;
   final Function btnPress;
 
-  ButtonPrimary({Key key, @required this.btnText, this.btnColor, this.btnPress})
+  ButtonPrimary(
+      {Key key,
+      @required this.btnText,
+      this.btnColor,
+      this.btnPress,
+      this.btnWidth,
+      this.btnHeight})
       : super(key: key);
 
   @override
@@ -17,8 +24,8 @@ class _ButtonPrimaryState extends State<ButtonPrimary> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 320,
-      height: 54,
+      width: widget.btnWidth ?? 320,
+      height: widget.btnHeight ?? 56,
       child: RaisedButton(
         shape: RoundedRectangleBorder(
             borderRadius: new BorderRadius.circular(8.0)),
